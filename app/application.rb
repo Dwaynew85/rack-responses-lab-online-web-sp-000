@@ -1,4 +1,4 @@
-class Application 
+class Application
 
   def call(env)
     return [ 200, {'Content-Type' => 'text/html'}, greeting]
@@ -6,5 +6,5 @@ class Application
 
   def greeting
     (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
-  end 
+  end
 end
