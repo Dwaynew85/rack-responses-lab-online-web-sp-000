@@ -5,6 +5,6 @@ class Application
   end
 
   def greeting
-    (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
+    (Time.now.hour < 12) ? "Good Morning!" : "Good Afternoon!"
   end
 end
